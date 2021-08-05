@@ -15,35 +15,18 @@ class Background extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-            Positioned(
-            top: -150,
-            right:-100,
-              child: Image.asset("images/yellowTri.png",
-              width: size.width * 0.5
-           ),
-        ),
-            Positioned(
-            top: 16,
-            right:15,
-              child: Image.asset(
-              "images/gradCap.png",
-              width: size.width * 0.17
-              ),
-            ),
-
-          Align(
-            alignment: Alignment (-0.7, -0.80),
-            child: Text( "Sign Up",
-              style: TextStyle(
-                  fontWeight: FontWeight.w500,
-                  letterSpacing: 3,
-                  fontSize: 60,
-                  color: Colors.white
-              ),
+          Text( "Sign Up",
+            style: TextStyle(
+                fontWeight: FontWeight.w500,
+                letterSpacing: 3,
+                fontSize: 60,
+                color: Colors.white
             ),
           ),
 
+          SizedBox(height: 50,),
 
           SizedBox(
             width: 400,
@@ -65,7 +48,11 @@ class Background extends StatelessWidget {
                   return (value != null) ? 'Please enter a sentence.' : null;
                 },
               )
-          ),          SizedBox(
+          ),
+
+          SizedBox(height: 30,),
+
+          SizedBox(
             width: 400,
             height: 80,
               child: TextFormField(
@@ -86,6 +73,9 @@ class Background extends StatelessWidget {
                 },
               )
           ),
+
+          SizedBox(height: 30,),
+
           SizedBox(
             width: 400,
             height: 80,
@@ -108,54 +98,52 @@ class Background extends StatelessWidget {
               )
           ),
 
+          SizedBox(height: 50,),
 
-          Align(
-            alignment: Alignment (0.1, 0.80),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                GestureDetector(
-                  onTap: (){
-                    // Get.to();
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                        color: pinkColor,
-                        borderRadius: BorderRadius.circular(8)
-                    ),
-                    width: 250,
-                    height: 50,
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.symmetric(vertical: 6, horizontal: 5),
-                    child: Text("CONTINUE",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w700,
-                        letterSpacing: 2,
-                      ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              GestureDetector(
+                onTap: (){
+                  Get.to(PositionScreen());
+                },
+                child: Positioned(
+                    top:120,
+                    left:10,
+                    child: new Image.asset('images/backarrow.png',
+                        width: 50,
+                        height:50,
+                        fit: BoxFit.fill)
+                ),
+              ),
+
+              GestureDetector(
+                onTap: (){
+                // Get.to();
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                  color: pinkColor,
+                  borderRadius: BorderRadius.circular(8)
+                  ),
+                width: 250,
+                height: 50,
+                alignment: Alignment.center,
+                padding: EdgeInsets.symmetric(vertical: 6, horizontal: 5),
+                  child: Text("CONTINUE",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 2,
                     ),
                   ),
                 ),
-              ],
-            ),
-          ),//
-          Align(
-            alignment: Alignment (-0.8, 0.8),
-            child: GestureDetector(
-              onTap: (){
-                Get.to(PositionScreen());
-              },
-              child: Positioned(
-                  top:120,
-                  left:10,
-                  child: new Image.asset('images/backarrow.png',
-                      width: 50,
-                      height:50,
-                      fit: BoxFit.fill)
               ),
-            ),
-          )
+
+            ],
+          ),
+
     ]);// child,
   }
 }

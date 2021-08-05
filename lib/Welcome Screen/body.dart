@@ -57,7 +57,7 @@ class Body extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(height: 25),
+              SizedBox(height: 35),
               GestureDetector(
                 onTap: (){
                   Get.to(SignUpScreen());

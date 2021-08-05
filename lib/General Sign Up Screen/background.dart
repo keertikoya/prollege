@@ -26,7 +26,7 @@ class Background extends StatelessWidget {
                 fontSize: 70,
                 color: Colors.white),
           ),
-          SizedBox(height: 12, ),
+          SizedBox(height: 20, ),
           SizedBox(
             width: 400,
             height: 80,
