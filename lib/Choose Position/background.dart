@@ -19,24 +19,34 @@ class Background extends StatelessWidget {
       width: double.infinity,
       height: size.height,
       child: Stack(
-        alignment: Alignment.center,
+        //alignment: Alignment.center,
         children: <Widget>[
-        Positioned(
-        top: -150,
-          right:-100,
-          child: Image.asset("images/yellowTri.png",
-              width: size.width * 0.5
-          ),
-        ),
-        Positioned(
-          top: 16,
-          right:15,
-          child: Image.asset(
-              "images/gradCap.png",
-              width: size.width * 0.17
-        ),
-      ),
+      //   Positioned(
+      //   top: -150,
+      //     right:-100,
+      //     child: Image.asset("images/yellowTri.png",
+      //         width: size.width * 0.5
+      //     ),
+      //   ),
+      //   Positioned(
+      //     top: 16,
+      //     right:15,
+      //     child: Image.asset(
+      //         "images/gradCap.png",
+      //         width: size.width * 0.17
+      //   ),
+      // ),
 
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Positioned.fill(
+                top: 0,
+                child: Image.asset("images/cornerImage.png"),
+                // width: 10,
+              ),
+            ],
+          ),
 
           Align(
             alignment: Alignment (-0.01, -0.50),
@@ -60,6 +70,7 @@ class Background extends StatelessWidget {
                   Get.to(StudentSignUp());
                 },
                 child: Container(
+                  margin: EdgeInsets.symmetric(vertical: 310,),
                   decoration: BoxDecoration(color: Colors.white,
                       borderRadius: BorderRadius.circular(8)),
                   width: 250,

@@ -15,10 +15,23 @@ class Background extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        //mainAxisAlignment: MainAxisAlignment.center,
         children: [
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Positioned.fill(
+                //top: 0,
+                child: Image.asset("images/cornerImage.png"),
+                // width: 10,
+              ),
+            ],
+          ),
+
           Text( "Sign Up",
             style: TextStyle(
+              height: -90,
                 fontWeight: FontWeight.w500,
                 letterSpacing: 3,
                 fontSize: 60,

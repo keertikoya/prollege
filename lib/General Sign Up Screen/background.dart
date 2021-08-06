@@ -14,19 +14,54 @@ class Background extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return
       Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+          //Size size = MediaQuery.of(context).size;
+        //mainAxisAlignment: MainAxisAlignment.center,
         children: [
+
+                // Container(
+                //   alignment: Alignment.topRight,
+                //   height: 180.0,
+                //   width: 220.0,
+                //   color: Colors.black,
+                //   child: Align(
+                //     alignment: Alignment.topRight,
+                //     child: Image.asset("images/cornerIcon.png"),
+                //   ),
+                // ),
+
+          // Center(
+          //   child: Container(
+          //     height: 320.0,
+          //     width: 520.0,
+          //     //color: Colors.blue[50],
+          //     child: const Align(
+          //       alignment: Alignment.topRight,
+          //       child:
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Positioned.fill(
+                      right: 90,
+                        child: Image.asset("images/cornerImage.png"),
+                      // width: 10,
+                    ),
+                  ],
+                ),
+
           Text(
             "Sign Up",
             style: TextStyle(
                 fontWeight: FontWeight.w500,
                 letterSpacing: 3,
+                //height: -90,
                 fontSize: 70,
                 color: Colors.white),
           ),
-          SizedBox(height: 20, ),
+
+          SizedBox(height: 40, ),
           SizedBox(
             width: 400,
             height: 80,
