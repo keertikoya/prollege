@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:prollege/login/screen1.dart';
+import 'package:prollege/Welcome%20Screen/welcome_screen.dart';
+//import 'package:prollege/login/screen1.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -15,14 +16,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: _title,
       theme: ThemeData(
         scaffoldBackgroundColor: primary,
         appBarTheme:
             AppBarTheme(centerTitle: true, elevation: 1, color: primary),
       ),
-      home: LoginScreen(),
+      home: WelcomeScreen(),
     );
   }
 }

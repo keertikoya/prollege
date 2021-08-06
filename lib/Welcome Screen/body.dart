@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:prollege/General%20Sign%20Up%20Screen/signup_screen.dart';
 import 'package:prollege/Welcome%20Screen/background.dart';
+import 'package:prollege/login/login_screen.dart';
+// import 'package:prollege/login/screen1.dart';
 import 'package:prollege/widgets/constants.dart';
 import 'package:prollege/Welcome%20Screen/rounded_button.dart';
-import 'package:prollege/General Sign Up Screen/signup_screen.dart';
 import 'package:prollege/widgets/custom_button.dart';
 import 'package:get/get.dart';
 class Body extends StatelessWidget {
@@ -60,7 +62,7 @@ class Body extends StatelessWidget {
               SizedBox(height: 35),
               GestureDetector(
                 onTap: (){
-                  Get.to(SignUpScreen());
+                  Get.to(LoginScreen());
                 },
                 child: Container(
                   decoration: BoxDecoration(color: Colors.white,
