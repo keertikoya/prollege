@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:prollege/Welcome%20Screen/welcome_screen.dart';
 //import 'package:prollege/login/screen1.dart';
 import 'package:get/get.dart';
+import 'package:prollege/Screens/Homepage/HomeScreen.dart';
+import 'package:prollege/constants.dart';
 
 void main() {
   runApp(MyApp());

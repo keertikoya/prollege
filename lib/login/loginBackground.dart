@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prollege/Choose%20Position/position_screen.dart';
+import 'package:prollege/Screens/Homepage/HomeScreen.dart';
 import 'package:prollege/Welcome%20Screen/welcome_screen.dart';
 import 'package:prollege/widgets/constants.dart';
 import 'package:get/get.dart';
@@ -132,7 +133,7 @@ class Background extends StatelessWidget {
 
               GestureDetector(
                 onTap: () {
-                  Get.to(PositionScreen());
+                  Get.to(HomeScreen());
                 },
                 child: Container(
                   decoration: BoxDecoration(
