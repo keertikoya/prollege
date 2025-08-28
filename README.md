@@ -1,16 +1,33 @@
-# prollege
+# Prollege  
+**Connect. Learn. Apply.**
 
-Prollege
+An intuitive platform dedicated to simplifying the college application process by connecting high school students with professional counselors and mentors.  
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Introduction  
+Prollege's core mission is to **empower high school students** by providing them with the professional guidance necessary for a stress-free and successful college admission journey. The platform serves as a bridge, connecting students to a network of vetted college counselors, alumni, and mentors.  
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Problem Statement  
+Over half of American high school students (**55%, or 8.3 million**) express a lack of readiness for college and careers. This sentiment stems from significant challenges, including:  
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Uncertainty regarding optimal high school course selection  
+- The high-stress environment of the college application process  
+- Limited access to qualified professionals for critical tasks such as essay review and personalized counseling  
+
+---
+
+## Solution  
+Prollege addresses these pain points by offering a **streamlined, all-in-one platform** for college guidance. It facilitates direct connections, in-app communication, and secure transactions, providing students with the resources they need to gain confidence and clarity.  
+
+---
+
+## Key Features  
+- **User Profiles**: Create and manage detailed profiles to facilitate optimal mentor-mentee matching  
+- **Mentor Discovery**: Advanced search and discovery engine to find counselors and mentors based on specific needs and preferences  
+- **In-App Communication**: Secure, integrated chat function for seamless conversation and collaboration  
+- **Secure Payments**: Protected payment system for services rendered  
+- **Rating System**: Post-service rating system to provide feedback and build community trust  
+- **Knowledge Base**: Free access to a curated library of professional articles on the college application process  
